@@ -16,6 +16,21 @@ h1 {
   text-align: center;
 }
 
+h1 a{
+  color: #ff7f04;
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 500ms linear 0s;
+  -o-transition: 500ms linear 0s;
+  transition: 500ms linear 0s;
+}
+h1 a:hover{
+  color: #ff5a07;
+  text-decoration: none;
+  text-shadow: -1px 1px 7px #fd9f46;
+}
+
 
 
 .nav a {
