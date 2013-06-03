@@ -381,6 +381,9 @@ footer li i {
     margin-bottom: 24px;
     margin-bottom: 1.5rem; 
   }
+  .reg-form-container form {
+    width: 85% !important;
+  }
   [class^="big-icon-"] {
     display: inline-block;
     height: 4.2rem;
