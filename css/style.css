@@ -158,14 +158,17 @@ input[type="text"]:focus {
 }
 .strip-2 {
   background: url('../img/furley-bg.png');
+  border-top: 3px solid #ff7911;
 }
 .strip-3 {
   background-color: #f68a33;
   color: #fff;
+  border-top: 3px solid #888787;
 }
 .strip-4 {
   border-bottom: 1px solid #4cbc64;
   background: url('../img/furley-bg.png');
+  border-top: 3px solid #333333;
 }
 .strip-5 {
   padding: 3.125rem 0; /*50/16*/ 
@@ -276,6 +279,7 @@ footer li i {
 }
 .signature {
   margin-left: 2.083%;
+  margin-bottom: 1rem;
   font-size: .75rem; 
   text-transform: uppercase;
 }
