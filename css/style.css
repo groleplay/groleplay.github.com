@@ -25,13 +25,11 @@ body {
   font-weight: normal;
   color: #333;
 }
-
 p {
   font-size: 1em;
   line-height: 1.5em;
   text-align: center;
 }
-
 a {
   color: #F68A33;
   text-decoration: none;
@@ -58,6 +56,11 @@ li:last-child {
 }
 .centered-text {
   text-align: center;
+}
+/*Actual home remove code when beta-teste be actual home*/
+aside h2{
+  margin-top: 144px;
+  margin-top: 9rem;
 }
 /*Beta-tester*/
 .reg-form-container {
@@ -291,7 +294,9 @@ footer li i {
   font-size: .75rem; 
   text-transform: uppercase;
 }
+
 /*media query*/
+
 @media (max-width: 840px) {
   .reg-form-container {
     margin-top: 24px;
@@ -323,6 +328,18 @@ footer li i {
   }
 }
 @media (max-width: 720px){
+  /*Actual home remove code when beta-teste be actual home*/
+  aside h2{
+    font-size: 2.5rem;
+    margin-top: 4rem;
+  }
+  aside a {
+    color: #F68A33;
+  }
+  aside a:hover {
+    color: #fa7b17;
+  }
+  /*..*/
   .form-intro {
     margin-top: 48px;
     margin-top: 3rem;
@@ -367,6 +384,12 @@ footer li i {
   }
 }
 @media (max-width: 480px) {
+  /*Actual home remove code when beta-tester be actual home*/
+  aside h2{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  /*..*/
   .header {
     height: 48px;
     height: 3rem;
