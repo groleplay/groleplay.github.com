@@ -82,3 +82,4 @@ Allow nested grids:
 .grid-14{ width:85.417% }
 .grid-15{ width:91.667% }
 .grid-16{ width:97.917%; margin:0 }
+.grid-5-33 { width:31.250%} /*La he hecho yo para dividir 16 en 3 partes iguales 93.751/3 = 31.250*/
