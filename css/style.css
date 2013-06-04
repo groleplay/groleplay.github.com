@@ -265,6 +265,9 @@ footer p {
   font-size: .875rem; 
   line-height: 1.25rem; 
 }
+footer .visible {
+  display: block;
+}
 footer .str {
   font-weight: bold;
 }
@@ -291,8 +294,7 @@ footer li i {
   margin-left: 2.083%;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: .75rem; 
-  text-transform: uppercase;
+  font-size: .75rem;
 }
 
 /*media query*/
