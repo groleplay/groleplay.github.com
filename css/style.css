@@ -159,6 +159,18 @@ input[type="text"]:focus {
   width: 100%;
   font-size: 1rem;
 }
+.nav a {
+  color: #333;
+}
+.nav a:hover {
+  color: #000;
+}
+aside .nav a {
+  color: #F68A33;
+}
+aside .nav a:hover {
+  color: #fa7b17;
+}
 .strip-1 {
   padding-bottom: 3rem;
 }
@@ -287,6 +299,9 @@ footer ul li {
 footer li a {
   color: #333;
 }
+footer li a:hover {
+  color: #000;
+}
 footer li i {
   font-size: 1.875rem;
   margin-left: -.375rem;
@@ -348,12 +363,6 @@ footer li i {
     margin-top: 48px;
     margin-top: 3rem;
     color: #F68A33;
-  }
-  a {
-    color: #333;
-  }
-  a:hover {
-    color: #000;
   }
   .reg-form-container {
     margin-top: 0;
