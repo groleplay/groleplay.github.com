@@ -284,6 +284,7 @@ footer p {
 }
 footer .visible {
   display: block;
+  font-weight: bold;
 }
 footer .str {
   font-weight: bold;
