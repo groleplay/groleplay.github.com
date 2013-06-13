@@ -41,6 +41,9 @@
             var submitted = false;
 
             $('#form').validate({
+              onclick: false,
+              onkeyup: false,
+              onfocusout: false,
               rules: {
                 'entry.1189378349': {
                   required: true,
