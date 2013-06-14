@@ -21,6 +21,8 @@
         <link rel="stylesheet" href="css/style.css">
 
         <script src="js/modernizr-2.6.1.min.js"></script>
+        <script src="js/jquery-1.10.1.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
         <script type="text/javascript">
 
           var _gaq = _gaq || [];
@@ -35,6 +37,21 @@
            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
            })();
 
+          $(document).ready(function () {
+            var submitted = false;
+
+            $('#form').validate({
+              onclick: false,
+              onkeyup: false,
+              onfocusout: false,
+              rules: {
+                'entry.1189378349': {
+                  required: true,
+                  email:    true
+                }
+              }
+            });
+          });
         </script>
     </head>
     <body>
@@ -54,7 +71,26 @@
               <div class="reg-form-container">
                 <h2 class="form-intro">¿Quieres participar como beta-tester?</h2>
                 <p class="important">Déjanos tu email</p>
-                <form action="index-beta_submit" method="get" accept-charset="utf-8">
+                <p id="feedback" class="important"></p>
+
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){ window.location = 'index-beta.html'; alert('Tu email se ha enviado correctamente');}"></iframe>
+                <form action="https://docs.google.com/forms/d/112ETlRxe1hAXVj_33900dMBSx_sVcbMIvtHMlDpYa1E/formResponse?pli=1" method="POST" id="form" target="hidden_iframe" onsubmit="submitted=true;">
+                  <label>
+                    Email
+                    <input type="text" name="entry.1189378349" value="" class="ss-q-short" id="entry_1189378349" required>
+                  </label>
+
+                  <p class="small">
+                    También puedes dejarnos un comentario, decirnos quién eres y 
+                    si nos sigues en Twitter o Facebook, etc.
+                  </p>
+                  <textarea name="entry.1409612391" id="entry_1409612391" dir="auto"></textarea>
+                  <p>
+                    <input type="submit" value="Enviar" class="btn btn-primary">
+                  </p>
+                </form>
+
+                <!--form action="index-beta_submit" method="get" accept-charset="utf-8">
                   <label>Email<input type="text"></label>
                   <p class="small">
                     También puedes dejarnos un comentario, decirnos quién eres y 
@@ -62,7 +98,7 @@
                   </p>
                   <textarea name=""></textarea>
                   <p><input type="submit" value="Enviar" class="btn btn-primary"></p>
-                </form>
+                </form-->
                 <p>Y también puedes seguir las novedades en:</p>
                 <ul class="nav">
                   <li>
