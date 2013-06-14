@@ -94,6 +94,11 @@ aside h2{
  margin-bottom: 2px;
  overflow: hidden;
 }
+.reg-form-container form label.error {
+  width: 100%;
+  color: red;
+  font-size: 14px; 
+}
 .reg-form-container form input,
 .reg-form-container form textarea {
   padding: 4px 6px;
