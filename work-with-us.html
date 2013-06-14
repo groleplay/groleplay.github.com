@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>gRole - Juega a Rol en Internet</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="shortcut icon" href="img/favicon.png" />
+
+        <link rel="stylesheet" href="css/inuit.css">
+        <link rel="stylesheet" href="css/grid.inuit.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+        <![endif]-->
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/modernizr-2.6.1.min.js"></script>
+        <script src="js/jquery-1.10.1.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-36114668-1']);
+          _gaq.push(['_setDomainName', 'groleplay.com']);
+          _gaq.push(['_addIgnoredRef', 'groleplay.com']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+           })();
+
+          $(document).ready(function () {
+            var submitted = false;
+
+            $('#form').validate({
+              onclick: false,
+              onkeyup: false,
+              onfocusout: false,
+              rules: {
+                'entry.1189378349': {
+                  required: true,
+                  email:    true
+                }
+              }
+            });
+          });
+        </script>
+    </head>
+    <body>
+      <div class="header">
+        <div class="wrapper">
+          <div class="grids">
+            <div class="grid-8">
+              <a class="logo small-logo" href="http://groleplay.com" title="gRole - Juega a Rol en Internet">
+                <img src="./img/banner-gRole.png" alt="gRole - Juega a Rol en Internet" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page">
+        <div class="wrapper">
+          <div class="grids">
+            <div class="grid-12">
+              <h2>Colabora con Nosotros</h2>
+              <p>
+                <strong>gRole</strong> es para las personas a las que les gustan los juegos de rol de siempre, 
+                pero que también les gusta Internet y sus ventajas.
+              </p>
+              <p>
+                Nuestra filosofía se basa en que <q>aquello que funciona en una mesa de juego también funcionará 
+                en Internet, y es lo único necesario para pasárselo bien</q>. 
+              </p>
+              <p>
+                Por lo tanto creemos que una plataforma para jugar a rol online debe ser sencilla y fácil de utilizar, 
+                y debe centrarse en aquellas cosas que realmente molan de las partidas de rol presenciales.
+              </p>
+              <p>
+                Si te gusta este planteamiento, tal vez te interese colaborar de alguna forma con nuestro proyecto. 
+                En concreto, en estos momentos podríamos incorporar tu apoyo en los siguientes ámbitos:
+              </p>
+              <ul>
+                <li>Desarrollo web en Ruby (+Rails) y Javascript (+Backbone)</li>
+                <li>Diseño web y maquetación</li>
+                <li>Análisis y mejora de usabilidad (UX)</li>
+                <li>Difusión del proyecto</li>
+                <li>Difusión del potencial pedagógico de los juegos de rol</li>
+              </ul>
+              <p>
+                Estamos convencidos de que los juegos de rol en Internet tienen un potencial enorme, y que se pueden 
+                hacer muchísimas cosas interesantes y divertidas. Por lo tanto, si crees que puedes ayudarnos en alguna
+                de estas áreas y te gustaría hacerlo, por favor escríbenos a:
+              </p>
+              <a href="mailto:info@groleplay.com">info@groleplay.com</a>
+              <p>
+                ¡Muchas gracias!
+              </p>
+              <p>
+                El equipo de gRole
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="wrapper">
+          <div class="grids">
+            <div class="grid-5-33">
+              <h4>Colabora con nosotros</h4>
+              <p>
+                En gRole estamos buscando personas que les guste nuestro proyecto y crean que pueden colaborar 
+                en ámbitos como el desarrollo web o la difusión del rol como herramienta pedagógica.
+                <a href="#">¿Te interesa?</a>
+              </p>
+            </div> <!-- end .grid-6 -->
+            <div class="grid-5-33">
+              <h4>Blog</h4>
+              <p>
+                ¡Empezamos! Por fin hemos puesto en marcha nuestra primera versión Beta y hemos empezado a 
+                reclutar beta-testers, con el objetivo de que a lo largo de este verano...
+                <a href="http://blog.groleplay.com" title="Blog de gRole" target="_blank">(leer más)</a>
+              </p>
+            </div> <!-- end .grid-5 -->
+            <div class="grid-5-33">
+              <h4>Contacto</h4>
+              <p>
+                Si quieres ponerte en contacto con gRole nos puedes escribir a:
+                <span class="visible">info@groleplay.com</span>
+                O simplemente contáctanos a través de:
+              </p>
+              <ul>
+                <li>
+                  <a href="http://www.facebook.com/groleplay" title="gRole en Facebook" target="_blank">
+                    <i class="icon-facebook-sign"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://twitter.com/groleplay" title="gRole en Twitter" target="_blank">
+                    <i class="icon-twitter-sign"></i>
+                  </a>
+                </li>
+              </ul>
+            </div> <!-- end .grid-5 -->
+            <p class="signature">&copy 2013 gRoleplay S.L.</p>
+          </div> <!-- end .grids -->
+        </div> <!-- end .wrapper -->
+      </footer>
+    </body>
+  </html>

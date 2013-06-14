@@ -454,5 +454,12 @@ footer li i {
     line-height: 1.8rem;
   }
 }
-
-
+/*
+WORK WITH US
+*/
+.page p {
+  text-align: left;
+}
+.page ul {
+  list-style: none;
+}
