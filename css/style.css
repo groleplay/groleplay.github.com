@@ -57,6 +57,9 @@ li:last-child {
 .centered-text {
   text-align: center;
 }
+.colored {
+  color: #F68A33;
+}
 /*Actual home remove code when beta-teste be actual home*/
 aside h2{
   margin-top: 144px;
@@ -339,6 +342,9 @@ WORK WITH US------------------------------------------------
 .grid-12.offset-2 {
   margin-left: 14.749%; //2.083*2 + 10.583 = 14.749 
 }
+.page h2 {
+  text-align: center;
+}
 .page p {
   text-align: left;
 }
@@ -348,20 +354,11 @@ WORK WITH US------------------------------------------------
 }
 .page ul li {
   padding-left: 1rem;
+  margin-bottom: 0.5rem;
   background: transparent url('../img/bullet.png') no-repeat 0 7px;
 }
-.contact-link {
-  display: inline-block;
-  margin-bottom: 1.5rem;
-}
-.page-signature {
+.page {
   margin-bottom: 3rem;
-}
-.page-signature p{
-  margin-bottom: 0;
-}
-.page-signature .small {
-  font-size: 85%;
 }
 
 /*media query*/
@@ -462,6 +459,9 @@ WORK WITH US------------------------------------------------
   }
   .page ul li {
     font-size: .88888888888888888888rem !important; //16/18 = .88888888888888888888
+  }
+  .page {
+    margin-bottom: 1.5rem;
   }
 }
 @media (max-width: 480px) {
