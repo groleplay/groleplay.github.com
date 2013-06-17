@@ -344,6 +344,11 @@ WORK WITH US------------------------------------------------
 }
 .page ul {
   list-style: none;
+  text-align: left;
+}
+.page ul li {
+  padding-left: 1rem;
+  background: transparent url('../img/bullet.png') no-repeat 0 7px;
 }
 .contact-link {
   display: inline-block;
@@ -449,10 +454,13 @@ WORK WITH US------------------------------------------------
   .btn-register-container .btn {
     font-size: .88888888888888888888rem !important; //16/18 = .88888888888888888888
   }
-  .page h2{
+  .page h2 {
     font-size: 1.33333333333333333333rem !important; //24/18 = 1.33333333333333333333
   }
-  .page p{
+  .page p {
+    font-size: .88888888888888888888rem !important; //16/18 = .88888888888888888888
+  }
+  .page ul li {
     font-size: .88888888888888888888rem !important; //16/18 = .88888888888888888888
   }
 }
