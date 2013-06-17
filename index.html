@@ -21,6 +21,8 @@
         <link rel="stylesheet" href="css/style.css">
 
         <script src="js/modernizr-2.6.1.min.js"></script>
+        <script src="js/jquery-1.10.1.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
         <script type="text/javascript">
 
           var _gaq = _gaq || [];
@@ -35,43 +37,215 @@
            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
            })();
 
+          $(document).ready(function () {
+            var submitted = false;
+
+            $('#form').validate({
+              onclick: false,
+              onkeyup: false,
+              onfocusout: false,
+              rules: {
+                'entry.1189378349': {
+                  required: true,
+                  email:    true
+                }
+              }
+            });
+          });
         </script>
     </head>
     <body>
+      
       <div class="header"></div>
-      <div class="strip"></div>
-      <div class="wrapper">
-        <article class="grids">
-          <section class="grid-8">
-            <a class="logo" href="http://groleplay.com" title="gRole - Juega a Rol en Internet">
-              <img src="./img/banner-gRole.png" alt="gRole - Juega a Rol en Internet" />
-            </a>
-            <p><img src="img/game.jpg" alt="gRole - Juega a Rol en Internet" /></p>
-          </section>
-          
-          <aside class="grid-8 centered-text">
-            <h2>¡Próximamente!</h2>
-            <p>Mientras tanto, puedes seguir las novedades en:</p>
-            <ul class="nav">
-              <li>
-                <a href="http://www.facebook.com/groleplay" title="gRole en Facebook" target="_blank">
-                  <i class="icon-facebook-sign icon-large"></i>
-                </a>
-              </li>
-              <li>
-                <a href="http://twitter.com/groleplay" title="gRole en Twitter" target="_blank">
-                  <i class="icon-twitter-sign icon-large"></i>
-                </a>
-              </li>
-              <li>
-                <a href="http://blog.groleplay.com" title="Blog de gRole" target="_blank">
-                  <i class="icon-rss icon-large"></i>
-                </a>
-              </li>
-            </ul>
-          </aside>
-        </article>
-      </div>
+      <div class="strip-1">
+        <div class="wrapper">
+          <div class="grids">
+            <div class="grid-8">
+              <a class="logo" href="http://groleplay.com" title="gRole - Juega a Rol en Internet">
+                <img src="./img/banner-gRole.png" alt="gRole - Juega a Rol en Internet" />
+              </a>
+              <p><img src="img/game-beta.png" alt="gRole - Juega a Rol en Internet" /></p>
+            </div> <!-- end .grid-8 -->
 
+            <div class="grid-8">
+              <div class="reg-form-container">
+                <h2 class="form-intro">¿Quieres participar como beta-tester?</h2>
+                <p class="important">Déjanos tu email</p>
+                <p id="feedback" class="important"></p>
+
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){ window.location = 'index-beta.html'; alert('Tu email se ha enviado correctamente');}"></iframe>
+                <form action="https://docs.google.com/forms/d/112ETlRxe1hAXVj_33900dMBSx_sVcbMIvtHMlDpYa1E/formResponse?pli=1" method="POST" id="form" target="hidden_iframe" onsubmit="submitted=true;">
+                  <label>
+                    Email
+                    <input type="text" name="entry.1189378349" value="" class="ss-q-short" id="entry_1189378349" required>
+                  </label>
+
+                  <p class="small">
+                    También puedes dejarnos un comentario, decirnos quién eres y 
+                    si nos sigues en Twitter o Facebook, etc.
+                  </p>
+                  <textarea name="entry.1409612391" id="entry_1409612391" dir="auto"></textarea>
+                  <p>
+                    <input type="submit" value="Enviar" class="btn btn-primary">
+                  </p>
+                </form>
+
+                <!--form action="index-beta_submit" method="get" accept-charset="utf-8">
+                  <label>Email<input type="text"></label>
+                  <p class="small">
+                    También puedes dejarnos un comentario, decirnos quién eres y 
+                    si nos sigues en Twitter o Facebook, etc.
+                  </p>
+                  <textarea name=""></textarea>
+                  <p><input type="submit" value="Enviar" class="btn btn-primary"></p>
+                </form-->
+                <p>Y también puedes seguir las novedades en:</p>
+                <ul class="nav">
+                  <li>
+                    <a href="http://www.facebook.com/groleplay" title="gRole en Facebook" target="_blank">
+                      <i class="icon-facebook-sign icon-large"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://twitter.com/groleplay" title="gRole en Twitter" target="_blank">
+                      <i class="icon-twitter-sign icon-large"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://blog.groleplay.com" title="Blog de gRole" target="_blank">
+                      <i class="icon-rss icon-large"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div> <!-- end .grid-8 -->
+          </div> <!-- end .grids -->
+        </div> <!-- end .wrapper -->
+      </div> <!-- end .strip-1 -->
+      
+      <div class="strip-2">
+        <div class="wrapper">
+          <div class="grids">
+            <div class="grid-6 centered-text">
+              <span class="big-icon-game"></span>
+              <h2 class="strip-title">Partidas</h2>
+              <p>
+                En gRole puedes jugar a rol directamente desde tu navegador, a tu ritmo y cuando te apetezca.
+              </p>
+              <p>
+                Encuentra partidas de D&D, Pathfinder, Mundo de Tinieblas o cualquier otra ambientación que elijas, 
+                en un entorno sencillo de manejar que contiene todo lo necesario: fichas de personaje, tiradas de 
+                dados,etc.
+              </p>
+            </div> <!-- end .grid-6 -->
+            <div class="grid-10">
+              <div class="img-container">
+                <img src="./img/game-picture.png" alt="screenshot" class="screenshot">
+              </div>
+            </div> <!-- end .grid-10 -->
+          </div> <!-- end .grids -->
+        </div> <!-- end .wrapper -->
+      </div> <!-- end .strip-2 -->
+
+      <div class="strip-3">
+        <div class="wrapper">
+          <div class="grids">
+            <div class="grid-6 centered-text right">
+              <span class="big-icon-club"></span>
+              <h2 class="strip-title">Clubs</h2>
+              <p>
+                Podrás crear tu propio club o unirte al que más te guste, forjando nuevas amistades en torno 
+                a las aventuras de vuestros personajes.
+              </p>
+              <p>
+                Tráete a tu grupo actual o recupera el de hace años, y vuelve a disfrutar del compañerismo, el 
+                humor y la diversión de una buena partida de rol.
+              </p>
+            </div> <!-- end .grid-6 -->
+            <div class="grid-10">
+              <div class="img-container">
+                <img src="./img/club-picture.png" alt="screenshot" class="screenshot">
+              </div>
+            </div> <!-- end .grid-10 -->
+          </div> <!-- end .grids -->
+        </div> <!-- end .wrapper -->
+      </div> <!-- end .strip-3 -->
+
+      <div class="strip-4">
+        <div class="wrapper">
+          <div class="grids">
+            <div class="grid-6 centered-text">
+              <span class="big-icon-resources"></span>
+              <h2 class="strip-title">Recursos</h2>
+              <p>
+                Aventuras, mapas, anotaciones sobre las reglas... todo lo que necesitas lo tendrás siempre a 
+                mano y listo para usarlo en tus partidas.
+              </p>
+              <p>
+                O bien crea tus propios juegos y contenidos, compártelos con la comunidad y consolídate como un autor 
+                de referencia en el mundo del rol.
+              </p>
+            </div> <!-- end .grid-6 -->
+            <div class="grid-10">
+              <div class="img-container">
+                <img src="./img/resources-picture2.png" alt="next-image" class="screenshot small-screenshot">
+              </div>
+            </div> <!-- end .grid-10 -->
+          </div> <!-- end .grids -->
+        </div> <!-- end .wrapper -->
+      </div> <!-- end .strip-3 -->
+
+      <div class="strip-5">
+        <div class="wrapper">
+          <div class="grids">
+            <a href="#" class="btn btn-primary">¡Regístrate y empieza a jugar!</a>
+          </div> <!-- end .grids -->
+        </div> <!-- end .wrapper -->
+      </div> <!-- end .strip-5 -->
+      
+      <footer>
+        <div class="wrapper">
+          <div class="grids">
+            <div class="grid-5-33">
+              <h4>Colabora con nosotros</h4>
+              <p>
+                En gRole estamos buscando personas que les guste nuestro proyecto y crean que pueden colaborar 
+                en ámbitos como el desarrollo web o la difusión del rol como herramienta pedagógica.
+                <a href="/work-with-us.html">¿Te interesa?</a>
+              </p>
+            </div> <!-- end .grid-6 -->
+            <div class="grid-5-33">
+              <h4>Blog</h4>
+              <p>
+                ¡Empezamos! Por fin hemos puesto en marcha nuestra primera versión Beta y hemos empezado a 
+                reclutar beta-testers, con el objetivo de que a lo largo de este verano...
+                <a href="http://blog.groleplay.com" title="Blog de gRole" target="_blank">(leer más)</a>
+              </p>
+            </div> <!-- end .grid-5 -->
+            <div class="grid-5-33">
+              <h4>Contacto</h4>
+              <p>
+                Si quieres ponerte en contacto con gRole nos puedes escribir a:
+                <span class="visible">info@groleplay.com</span>
+                O simplemente contáctanos a través de:
+              </p>
+              <ul>
+                <li>
+                  <a href="http://www.facebook.com/groleplay" title="gRole en Facebook" target="_blank">
+                    <i class="icon-facebook-sign"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://twitter.com/groleplay" title="gRole en Twitter" target="_blank">
+                    <i class="icon-twitter-sign"></i>
+                  </a>
+                </li>
+              </ul>
+            </div> <!-- end .grid-5 -->
+            <p class="signature">&copy 2013 gRoleplay S.L.</p>
+          </div> <!-- end .grids -->
+        </div> <!-- end .wrapper -->
+      </footer>
+      
     </body>
 </html>
