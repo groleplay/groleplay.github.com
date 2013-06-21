@@ -57,6 +57,9 @@ li:last-child {
 .centered-text {
   text-align: center;
 }
+.colored {
+  color: #F68A33;
+}
 /*Actual home remove code when beta-teste be actual home*/
 aside h2{
   margin-top: 144px;
@@ -93,6 +96,11 @@ aside h2{
  line-height: 30px;
  margin-bottom: 2px;
  overflow: hidden;
+}
+.reg-form-container form label.error {
+  width: 100%;
+  color: red;
+  font-size: 14px; 
 }
 .reg-form-container form input,
 .reg-form-container form textarea {
@@ -317,6 +325,41 @@ footer li i {
   margin-bottom: 1rem;
   font-size: .75rem;
 }
+/*
+WORK WITH US------------------------------------------------
+*/
+.small-logo {
+   float: left;
+   margin-top: 11px;
+}
+.btn-register-container {
+  float: right;
+  padding: 1.25rem .625rem 1.1875rem .625rem;
+  background-color: #1E9448;
+  border-right: 1px solid #53575A;
+  border-left: 1px solid #53575A;
+}
+.grid-12.offset-2 {
+  margin-left: 14.749%; //2.083*2 + 10.583 = 14.749 
+}
+.page h2 {
+  text-align: center;
+}
+.page p {
+  text-align: left;
+}
+.page ul {
+  list-style: none;
+  text-align: left;
+}
+.page ul li {
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  background: transparent url('../img/bullet.png') no-repeat 0 7px;
+}
+.page {
+  margin-bottom: 3rem;
+}
 
 /*media query*/
 
@@ -399,6 +442,27 @@ footer li i {
   .strip-3 .img-container {
     margin-bottom: 2rem;
   }
+  .grid-12.offset-2 {
+    margin-left: 2.083%; //2.083 
+  }
+  .btn-register-container {
+    padding: 1.32rem .625rem 1.32rem .625rem;
+  }
+  .btn-register-container .btn {
+    font-size: .88888888888888888888rem !important; //16/18 = .88888888888888888888
+  }
+  .page h2 {
+    font-size: 1.33333333333333333333rem !important; //24/18 = 1.33333333333333333333
+  }
+  .page p {
+    font-size: .88888888888888888888rem !important; //16/18 = .88888888888888888888
+  }
+  .page ul li {
+    font-size: .88888888888888888888rem !important; //16/18 = .88888888888888888888
+  }
+  .page {
+    margin-bottom: 1.5rem;
+  }
 }
 @media (max-width: 480px) {
   /*Actual home remove code when beta-tester be actual home*/
@@ -448,6 +512,10 @@ footer li i {
     font-size: 1.2rem;
     line-height: 1.8rem;
   }
+  .small-logo {
+    margin-top: 2px;
+  }
+  .btn-register-container {
+    padding: .6rem;
+  }
 }
-
-
